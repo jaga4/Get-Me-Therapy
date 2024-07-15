@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/https//jaga4.github.io/Get-Me-Therapy/static/css/main.6188729a.css",
+    "main.js": "/https//jaga4.github.io/Get-Me-Therapy/static/js/main.f9c68adb.js",
+    "static/js/453.bb014c9d.chunk.js": "/https//jaga4.github.io/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js",
+    "static/media/mobile-burger3.png": "/https//jaga4.github.io/Get-Me-Therapy/static/media/mobile-burger3.d41c1b991cc7935da418.png",
+    "static/media/mobile-burger2.png": "/https//jaga4.github.io/Get-Me-Therapy/static/media/mobile-burger2.edb090ca77eb0b85a89a.png",
+    "static/media/mobile-burger.png": "/https//jaga4.github.io/Get-Me-Therapy/static/media/mobile-burger.c90fe2d93998a19424b2.png",
+    "static/media/bootstrap-icons.woff?": "/https//jaga4.github.io/Get-Me-Therapy/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/https//jaga4.github.io/Get-Me-Therapy/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/burger.jpg": "/https//jaga4.github.io/Get-Me-Therapy/static/media/burger.cd909fe65ffe04758345.jpg",
+    "index.html": "/https//jaga4.github.io/Get-Me-Therapy/index.html",
+    "main.6188729a.css.map": "/https//jaga4.github.io/Get-Me-Therapy/static/css/main.6188729a.css.map",
+    "main.f9c68adb.js.map": "/https//jaga4.github.io/Get-Me-Therapy/static/js/main.f9c68adb.js.map",
+    "453.bb014c9d.chunk.js.map": "/https//jaga4.github.io/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6188729a.css",
+    "static/js/main.f9c68adb.js"
+  ]
+}
