@@ -1,0 +1,100 @@
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url("C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/public/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.success-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+.top-bar{
+    width: 58.13px;
+    height: 4px;
+    position: relative;
+    top: -13px;
+    left: 134.43px;
+    border-radius: 11px;
+    background: #00000033;
+}
+.Illustration{
+    margin-top: 10px;
+    left: -5px;
+}
+.Illustration img{
+    width: 202.62px;
+   height: 160px;
+}
+.title{
+    margin-top: 10px;
+}
+.title .h5{
+    font-family: Inter,sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+
+}
+.goto-in-btn{
+    width: 100%;
+    padding: 16px;
+    background-color: #FE8C00;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.logout{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.logout-text{
+    font-family: Inter,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #878787;
+
+}
+
+.end-line-succ{
+    width: 134px;
+    height: 5px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    border-radius: 100px;
+    background-color: #101010;
+    
+    }
+
+@media (max-width: 768px) {
+
+    .success-container {
+        background-image: url("C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/public/mobile-burger.png");
+    }
+    .end-line-succ{
+        left: 90px;
+    }
+    .success-form {
+        margin-top: 25rem;
+        border-radius: 30px;
+    }
+    }
+
+    

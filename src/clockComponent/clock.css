@@ -1,0 +1,70 @@
+.clock-container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .hand {
+    position: absolute;
+    width: 50%;
+    height: 6px;
+    background-color: #FE8C00;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.1s linear;
+  }
+  
+  .hour {
+    height: 8px;
+  }
+  
+  .minute {
+    height: 6px;
+  }
+  
+  .second {
+    height: 4px;
+    background-color: #FE8C00;
+  }
+  
+  .number {
+    position: absolute;
+    color: black;
+    font-size: 0.8em;
+    transform: translate(-50%, -50%);
+  }
+  
+  .number1 { top: 10%; left: 72%; }
+  .number2 { top: 25%; left: 88%; }
+  .number3 { top: 50%; left: 90%; }
+  .number4 { top: 75%; left: 84%; }
+  .number5 { top: 90%; left: 68%; }
+  .number6 { top: 90%; left: 50%; }
+  .number7 { top: 88%; left: 30%; }
+  .number8 { top: 70%; left: 15%; }
+  .number9 { top: 50%; left: 10%; }
+  .number10 { top: 28%; left: 15%; }
+  .number11 { top: 10%; left: 30%; }
+  .number12 { top: 8%; left: 50%; }
+  
+  @media (max-width: 768px) {
+    .clock-container{
+    width: 375px;
+    height: 812px;
+    }
+  }
