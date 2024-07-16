@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/Get-Me-Therapy/static/css/main.125a4882.css",
-    "main.js": "/Get-Me-Therapy/static/js/main.3abbdfdd.js",
+    "main.css": "/Get-Me-Therapy/static/css/main.e497d281.css",
+    "main.js": "/Get-Me-Therapy/static/js/main.43761fab.js",
     "static/js/453.bb014c9d.chunk.js": "/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js",
     "static/media/mobile-burger3.png": "/Get-Me-Therapy/static/media/mobile-burger3.d41c1b991cc7935da418.png",
     "static/media/mobile-burger2.png": "/Get-Me-Therapy/static/media/mobile-burger2.edb090ca77eb0b85a89a.png",
     "static/media/mobile-burger.png": "/Get-Me-Therapy/static/media/mobile-burger.c90fe2d93998a19424b2.png",
+    "static/media/pixelcut-export.png": "/Get-Me-Therapy/static/media/pixelcut-export.3812c26f8e6d3db6880c.png",
     "static/media/bootstrap-icons.woff?": "/Get-Me-Therapy/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
     "static/media/bootstrap-icons.woff2?": "/Get-Me-Therapy/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
     "static/media/burger.jpg": "/Get-Me-Therapy/static/media/burger.cd909fe65ffe04758345.jpg",
     "index.html": "/Get-Me-Therapy/index.html",
-    "main.125a4882.css.map": "/Get-Me-Therapy/static/css/main.125a4882.css.map",
-    "main.3abbdfdd.js.map": "/Get-Me-Therapy/static/js/main.3abbdfdd.js.map",
+    "main.e497d281.css.map": "/Get-Me-Therapy/static/css/main.e497d281.css.map",
+    "main.43761fab.js.map": "/Get-Me-Therapy/static/js/main.43761fab.js.map",
     "453.bb014c9d.chunk.js.map": "/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.125a4882.css",
-    "static/js/main.3abbdfdd.js"
+    "static/css/main.e497d281.css",
+    "static/js/main.43761fab.js"
   ]
 }
