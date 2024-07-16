@@ -15,12 +15,10 @@ const Clock = () => {
     setSpeed(initialSpeed);
   };
 
- 
   useEffect(() => {
     initializeFromURLParams();
   }, []);
 
-  
   useEffect(() => {
     const timer = setInterval(() => {
       setTime((prevTime) => new Date(prevTime.getTime() - 1000 * speed));
@@ -29,22 +27,26 @@ const Clock = () => {
     return () => clearInterval(timer);
   }, [speed]);
 
- 
   const handleSliderChange = (event) => {
     setSpeed(parseInt(event.target.value));
   };
-
 
   const handleShareButtonClick = () => {
     const url = new URL(window.location);
     url.searchParams.set('time', time.getTime());
     url.searchParams.set('speed', speed);
-    navigator.clipboard.writeText(url.toString()).then(() => {
-      alert('URL copied to clipboard!');
-    });
-    setSharedURL(url.toString());
-  };
 
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url.toString()).then(() => {
+        alert('URL copied to clipboard!');
+      }).catch(err => {
+        alert('Failed to copy URL: ' + err);
+      });
+    } else {
+      alert('Clipboard API not supported. Please copy the URL manually.');
+      setSharedURL(url.toString());
+    }
+  };
 
   const calculateRotation = (unit, maxUnit) => {
     return (1 - unit / maxUnit) * 360; 
