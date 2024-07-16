@@ -32,19 +32,27 @@ const Clock = () => {
   };
 
   const handleShareButtonClick = () => {
-    const url = new URL(window.location);
-    url.searchParams.set('time', time.getTime());
-    url.searchParams.set('speed', speed);
+    try {
+      const baseUrl = process.env.REACT_APP_BASE_URL || window.location.origin;
+      const url = new URL(`${baseUrl}/clockScreen/?time=${time.getTime()}&speed=${speed}`);
+      console.log("Generated URL: ", url.toString());
 
-    if (navigator.clipboard && navigator.clipboard.writeText) {
-      navigator.clipboard.writeText(url.toString()).then(() => {
-        alert('URL copied to clipboard!');
-      }).catch(err => {
-        alert('Failed to copy URL: ' + err);
-      });
-    } else {
-      alert('Clipboard API not supported. Please copy the URL manually.');
-      setSharedURL(url.toString());
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url.toString())
+          .then(() => {
+            alert('URL copied to clipboard!');
+          })
+          .catch(err => {
+            console.error('Failed to copy URL: ', err);
+            alert('Failed to copy URL: ' + err);
+          });
+      } else {
+        alert('Clipboard API not supported. Please copy the URL manually.');
+        setSharedURL(url.toString());
+      }
+    } catch (error) {
+      console.error('Failed to construct URL: ', error);
+      alert('Failed to construct URL: ' + error.message);
     }
   };
 
