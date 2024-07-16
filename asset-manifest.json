@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Get-Me-Therapy/static/css/main.e497d281.css",
-    "main.js": "/Get-Me-Therapy/static/js/main.6b2bb0b8.js",
+    "main.js": "/Get-Me-Therapy/static/js/main.28556e7d.js",
     "static/js/453.bb014c9d.chunk.js": "/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js",
     "static/media/mobile-burger3.png": "/Get-Me-Therapy/static/media/mobile-burger3.d41c1b991cc7935da418.png",
     "static/media/mobile-burger2.png": "/Get-Me-Therapy/static/media/mobile-burger2.edb090ca77eb0b85a89a.png",
@@ -12,11 +12,11 @@
     "static/media/burger.jpg": "/Get-Me-Therapy/static/media/burger.cd909fe65ffe04758345.jpg",
     "index.html": "/Get-Me-Therapy/index.html",
     "main.e497d281.css.map": "/Get-Me-Therapy/static/css/main.e497d281.css.map",
-    "main.6b2bb0b8.js.map": "/Get-Me-Therapy/static/js/main.6b2bb0b8.js.map",
+    "main.28556e7d.js.map": "/Get-Me-Therapy/static/js/main.28556e7d.js.map",
     "453.bb014c9d.chunk.js.map": "/Get-Me-Therapy/static/js/453.bb014c9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e497d281.css",
-    "static/js/main.6b2bb0b8.js"
+    "static/js/main.28556e7d.js"
   ]
 }
