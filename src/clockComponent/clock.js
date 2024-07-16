@@ -5,17 +5,17 @@ const Clock = () => {
   const [time, setTime] = useState(new Date());
   const [speed, setSpeed] = useState(1);
   const [sharedURL, setSharedURL] = useState('');
+
   useEffect(() => {
-  const initializeFromURLParams = () => {
-    const params = new URLSearchParams(window.location.search);
-    const initialTime = params.get('time') ? new Date(parseInt(params.get('time'))) : new Date();
-    const initialSpeed = params.get('speed') ? parseInt(params.get('speed')) : 1;
+    const initializeFromURLParams = () => {
+      const params = new URLSearchParams(window.location.search);
+      const initialTime = params.get('time') ? new Date(parseInt(params.get('time'))) : new Date();
+      const initialSpeed = params.get('speed') ? parseInt(params.get('speed')) : 1;
 
-    setTime(initialTime);
-    setSpeed(initialSpeed);
-  };
+      setTime(initialTime);
+      setSpeed(initialSpeed);
+    };
 
- 
     initializeFromURLParams();
   }, []);
 
@@ -33,10 +33,9 @@ const Clock = () => {
 
   const handleShareButtonClick = () => {
     try {
-      const baseUrl = process.env.REACT_APP_BASE_URL || `${window.location.protocol}//${window.location.host}`;
-      const url = new URL(`${baseUrl}/clockScreen/?time=${time.getTime()}&speed=${speed}`);
+      const baseUrl = process.env.REACT_APP_BASE_URL || `${window.location.protocol}//${window.location.host}/Get-Me-Therapy/#`;
+      const url = new URL(`${baseUrl}/clockScreen?time=${time.getTime()}&speed=${speed}`);
       console.log("Generated URL: ", url.toString());
-
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url.toString())
@@ -58,7 +57,7 @@ const Clock = () => {
   };
 
   const calculateRotation = (unit, maxUnit) => {
-    return (1 - unit / maxUnit) * 360; 
+    return (1 - unit / maxUnit) * 360;
   };
 
   return (
@@ -99,7 +98,7 @@ const Clock = () => {
           padding: '10px 20px',
           fontSize: '1em',
           cursor: 'pointer',
-          borderRadius:'10px',
+          borderRadius: '10px',
         }}
       >
         Share
