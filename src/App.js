@@ -3,7 +3,7 @@
 
 
 import Banner from "./banners/banner";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Login from "./LoginComponent/login";
 import Register from "./RegisterComponent/Register";
 import Success from "./SuccessfulComponent/success";
@@ -13,9 +13,9 @@ import Clock from "./clockComponent/clock";
 function App() {
   
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
-       <Route path="/Get-Me-Therapy" element={<Banner nav={true} path="next" img="" sliders="sd1"/>}></Route>
+       <Route path="/" element={<Banner nav={true} path="next" img="" sliders="sd1"/>}></Route>
        <Route path="/next" element={<Banner nav={true} path="next1" img="pic1" sliders="sd2"/>}></Route>
        <Route path="/next1" element={<Banner nav={false} img="pic2" sliders="sd3" progressBtn="true" />}></Route>
        <Route path="/login" element={<Login/>}></Route>
@@ -23,7 +23,7 @@ function App() {
        <Route path="/success" element={<Success/>}></Route>
        <Route path="/clockScreen" element={<Clock/>}></Route>
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
