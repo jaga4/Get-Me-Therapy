@@ -13,7 +13,7 @@ import Clock from "./clockComponent/clock";
 function App() {
   
   return (
-    <BrowserRouter basename="/Get-Me-Therapy">
+    <BrowserRouter>
       <Routes>
        <Route path="/Get-Me-Therapy" element={<Banner nav={true} path="next" img="" sliders="sd1"/>}></Route>
        <Route path="/next" element={<Banner nav={true} path="next1" img="pic1" sliders="sd2"/>}></Route>
