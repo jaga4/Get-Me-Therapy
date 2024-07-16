@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-       <Route path="/" element={<Banner nav={true} path="next" img="" sliders="sd1"/>}></Route>
+       <Route path="/Get-Me-Therapy" element={<Banner nav={true} path="next" img="" sliders="sd1"/>}></Route>
        <Route path="/next" element={<Banner nav={true} path="next1" img="pic1" sliders="sd2"/>}></Route>
        <Route path="/next1" element={<Banner nav={false} img="pic2" sliders="sd3" progressBtn="true" />}></Route>
        <Route path="/login" element={<Login/>}></Route>

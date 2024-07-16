@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Register.css";
 import { Link, useNavigate } from "react-router-dom";
+import src from "C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/src/images/google.png"
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -152,7 +153,7 @@ const Register = () => {
             <div className="line2"></div>
             <Link to={"/success"} className="google-sign-in">
               <img
-                src="google.png"
+                src={src}
                 alt="Google Sign-In"
               />
             </Link>

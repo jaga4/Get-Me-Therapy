@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
-
+import src from "C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/src/images/google.png"
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -74,7 +74,7 @@ const Login = () => {
             <span>Or sign in with</span>
             <div className="line2"></div>
             <Link to={"/success"} className="google-sign-in">
-              <img src="google.png" alt="google" />
+              <img src={src} alt="google" />
             </Link>
           </div>
         </form>

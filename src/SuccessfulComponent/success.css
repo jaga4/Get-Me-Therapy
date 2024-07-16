@@ -85,8 +85,11 @@
 
 @media (max-width: 768px) {
 
+
     .success-container {
         background-image: url("C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/public/mobile-burger.png");
+        width: 375px;
+        height: 812px;
     }
     .end-line-succ{
         left: 90px;

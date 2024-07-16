@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import './success.css';
+import src from 'C:/Users/JAGADEESH/OneDrive/Desktop/tasks/GetMeTherapy/analogclock/src/images/pixelcut-export.png'
 const Success=()=>{
     const navigate = useNavigate();
     function handleTracking(){
@@ -11,7 +12,7 @@ const Success=()=>{
             <div className="success-form">
             <div className='top-bar'></div>
             <div className='Illustration'>
-                <img className='success-logo' src='pixelcut-export.png' alt='logo'/>
+                <img className='success-logo' src={src} alt='logo'/>
             </div>
             <div className='title'>
                 <h5 className='content'>Login Successful</h5>
