@@ -5,51 +5,38 @@ const Clock = () => {
   const [time, setTime] = useState(new Date());
   const [speed, setSpeed] = useState(1);
   const [sharedURL, setSharedURL] = useState('');
-
-  // Initialize time and speed from URL parameters on component mount
   useEffect(() => {
-    const initializeFromURLParams = () => {
-      const params = new URLSearchParams(window.location.search);
-      const initialTime = params.get('time') ? new Date(parseInt(params.get('time'))) : new Date();
-      const initialSpeed = params.get('speed') ? parseInt(params.get('speed')) : 1;
+  const initializeFromURLParams = () => {
+    const params = new URLSearchParams(window.location.search);
+    const initialTime = params.get('time') ? new Date(parseInt(params.get('time'))) : new Date();
+    const initialSpeed = params.get('speed') ? parseInt(params.get('speed')) : 1;
 
-      if (isNaN(initialTime.getTime())) {
-        alert('Invalid time parameter');
-        return;
-      }
+    setTime(initialTime);
+    setSpeed(initialSpeed);
+  };
 
-      if (isNaN(initialSpeed) || initialSpeed < 1 || initialSpeed > 10) {
-        alert('Invalid speed parameter');
-        return;
-      }
-
-      setTime(initialTime);
-      setSpeed(initialSpeed);
-    };
-
+ 
     initializeFromURLParams();
   }, []);
 
-  // Update time based on speed every second
   useEffect(() => {
     const timer = setInterval(() => {
-      setTime(prevTime => new Date(prevTime.getTime() - 1000 * speed));
+      setTime((prevTime) => new Date(prevTime.getTime() - 1000 * speed));
     }, 1000);
 
     return () => clearInterval(timer);
   }, [speed]);
 
-  // Handle slider change
-  const handleSliderChange = event => {
+  const handleSliderChange = (event) => {
     setSpeed(parseInt(event.target.value));
   };
 
-  // Handle share button click
   const handleShareButtonClick = () => {
     try {
       const baseUrl = process.env.REACT_APP_BASE_URL || `${window.location.protocol}//${window.location.host}`;
       const url = new URL(`${baseUrl}/clockScreen/?time=${time.getTime()}&speed=${speed}`);
       console.log("Generated URL: ", url.toString());
+
 
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url.toString())
@@ -70,9 +57,8 @@ const Clock = () => {
     }
   };
 
-  // Calculate rotation for clock hands
   const calculateRotation = (unit, maxUnit) => {
-    return (1 - unit / maxUnit) * 360;
+    return (1 - unit / maxUnit) * 360; 
   };
 
   return (
@@ -113,7 +99,7 @@ const Clock = () => {
           padding: '10px 20px',
           fontSize: '1em',
           cursor: 'pointer',
-          borderRadius: '10px',
+          borderRadius:'10px',
         }}
       >
         Share
